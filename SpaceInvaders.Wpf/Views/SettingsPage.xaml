@@ -1,0 +1,48 @@
+﻿<Page x:Class="SpaceInvaders.Wpf.Views.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Settings" Background="#121212">
+
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0">
+            <Button Content="◀ Back" Width="120" Height="44" Click="Back_Click" />
+            <TextBlock Text="Settings" FontSize="32" Foreground="#FFFFFF" Margin="16,4,0,0" />
+        </DockPanel>
+
+        <StackPanel Grid.Row="1" Margin="0,16,0,0" Width="520">
+            <TextBlock Text="Audio" FontSize="22" Foreground="#FFFFFF" Margin="0,0,0,12"/>
+
+            <CheckBox x:Name="MuteCheck" Content="Mute all" Foreground="#FFFFFF" FontSize="16" Margin="0,0,0,16"
+                      Click="AudioChanged_Click"/>
+
+            <TextBlock Text="Music volume" Foreground="#D6D6D6"/>
+            <Slider x:Name="MusicSlider" Minimum="0" Maximum="1" ValueChanged="MusicChanged_ValueChanged"/>
+
+            <TextBlock Text="SFX volume" Foreground="#D6D6D6" Margin="0,16,0,0"/>
+            <Slider x:Name="SfxSlider" Minimum="0" Maximum="1" ValueChanged="SfxChanged_ValueChanged"/>
+
+            <Button Content="Test SFX" Height="46" Margin="0,18,0,0" Click="TestSfx_Click" />
+
+            <Separator Margin="0,22,0,18" Background="#2A2A2A" />
+
+            <TextBlock Text="UI" FontSize="22" Foreground="#FFFFFF" Margin="0,0,0,12"/>
+
+            <CheckBox x:Name="UiAutoCheck" Content="Auto scale (recommended)" Foreground="#FFFFFF" FontSize="16" Margin="0,0,0,10"
+                      Click="UiScaleChanged_Click"/>
+
+            <TextBlock Text="UI scale" Foreground="#D6D6D6"/>
+            <Slider x:Name="UiScaleSlider" Minimum="0.75" Maximum="1.75" SmallChange="0.05" LargeChange="0.1"
+                    ValueChanged="UiScaleSlider_ValueChanged" />
+
+            <TextBlock x:Name="UiScaleLabel" Text="" Foreground="#AAAAAA" Margin="0,6,0,0"/>
+        </StackPanel>
+
+        <TextBlock Grid.Row="2" Text="Changes are saved automatically." Foreground="#AAAAAA" Margin="0,12,0,0"/>
+    </Grid>
+</Page>

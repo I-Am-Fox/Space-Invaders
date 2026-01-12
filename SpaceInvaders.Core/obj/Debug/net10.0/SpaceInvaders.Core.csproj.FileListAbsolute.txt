@@ -1,0 +1,11 @@
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\bin\Debug\net10.0\SpaceInvaders.Core.deps.json
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\bin\Debug\net10.0\SpaceInvaders.Core.dll
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\bin\Debug\net10.0\SpaceInvaders.Core.pdb
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\obj\Debug\net10.0\SpaceInvaders.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\obj\Debug\net10.0\SpaceInvaders.Core.AssemblyInfoInputs.cache
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\obj\Debug\net10.0\SpaceInvaders.Core.AssemblyInfo.cs
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\obj\Debug\net10.0\SpaceInvaders.Core.csproj.CoreCompileInputs.cache
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\obj\Debug\net10.0\SpaceInvaders.Core.dll
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\obj\Debug\net10.0\refint\SpaceInvaders.Core.dll
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\obj\Debug\net10.0\SpaceInvaders.Core.pdb
+C:\Users\josh-\RiderProjects\Space Invaders\SpaceInvaders.Core\obj\Debug\net10.0\ref\SpaceInvaders.Core.dll

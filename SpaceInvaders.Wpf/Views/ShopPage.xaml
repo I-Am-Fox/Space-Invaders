@@ -1,0 +1,28 @@
+﻿<Page x:Class="SpaceInvaders.Wpf.Views.ShopPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Shop" Background="#121212">
+
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0">
+            <Button Content="← Back" Width="120" Height="44" Click="OnBack" />
+            <TextBlock Text="Permanent Upgrades" FontSize="32" Foreground="#FFFFFF" Margin="16,4,0,0" />
+        </DockPanel>
+
+        <TextBlock x:Name="CoinsText" Grid.Row="1" Text="Coins: 0" FontSize="20" Foreground="#D6D6D6" Margin="0,12,0,12" />
+
+        <ScrollViewer Grid.Row="2">
+            <StackPanel x:Name="ItemsPanel" />
+        </ScrollViewer>
+
+        <TextBlock Grid.Row="3" Text="Upgrades apply to the start of every run." Foreground="#AAAAAA" Margin="0,12,0,0"/>
+    </Grid>
+</Page>
+

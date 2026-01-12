@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SpaceInvaders.Core/1.0.0": {
+        "runtime": {
+          "SpaceInvaders.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SpaceInvaders.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
