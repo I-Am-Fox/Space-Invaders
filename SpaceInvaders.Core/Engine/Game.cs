@@ -23,8 +23,11 @@ public sealed class Game
 
     public IReadOnlyList<Upgrade>? PendingUpgrades { get; private set; }
 
+    public GameConfig Config { get; }
+
     public Game(GameConfig config)
     {
+        Config = config;
         _rng = new SeededRng(config.Seed);
 
         var run = new RunState

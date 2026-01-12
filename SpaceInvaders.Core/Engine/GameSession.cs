@@ -40,4 +40,11 @@ public sealed class GameSession
     {
         CurrentGame = null;
     }
+
+    public bool HasActiveRun => CurrentGame is not null;
+
+    public void RestoreRun(Game game)
+    {
+        CurrentGame = game;
+    }
 }

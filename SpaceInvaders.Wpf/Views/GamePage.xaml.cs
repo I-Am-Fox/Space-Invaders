@@ -120,6 +120,8 @@ public partial class GamePage
             _shell.SaveProfile();
         }
 
+        _shell.ClearRunSave();
+
         HideExitOverlay(resumeTimer: false);
         _shell.NavigateToMainMenu(this);
     }
@@ -128,6 +130,8 @@ public partial class GamePage
     {
         if (_shell.Session.CurrentGame is { } activeGame && !activeGame.State.IsGameOver)
             _shell.Session.AbandonRun();
+
+        _shell.ClearRunSave();
 
         HideExitOverlay(resumeTimer: false);
         _shell.NavigateToMainMenu(this);
@@ -193,6 +197,7 @@ public partial class GamePage
             // Bank coins immediately when run ends.
             _shell.Session.EndRunAndBankCoins();
             _shell.SaveProfile();
+            _shell.ClearRunSave();
             ShowGameOverOverlay(beforeScore);
         }
     }
